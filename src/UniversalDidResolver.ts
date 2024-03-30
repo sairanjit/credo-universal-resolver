@@ -3,7 +3,7 @@ import type {
   AgentDependencies,
   DidResolutionResult,
   DidResolver
-} from "@aries-framework/core"
+} from "@credo-ts/core"
 
 export type UniversalDidResolverOptions = {
   fetchIdentifiersUrl: string
@@ -11,6 +11,7 @@ export type UniversalDidResolverOptions = {
 }
 
 export class UniversalDidResolver implements DidResolver {
+  public readonly allowsCaching = false
   public supportedMethods: Array<string>
   private url: string
 
@@ -28,9 +29,9 @@ export class UniversalDidResolver implements DidResolver {
     retrieveMethodsUrl: string,
     fetchIdentifiersUrl: string
   ) {
-    const supportedMethods = await (
+    const supportedMethods = (await (
       await agentDependencies.fetch(retrieveMethodsUrl)
-    ).json()
+    ).json()) as Array<string>
 
     return new UniversalDidResolver({
       fetchIdentifiersUrl: fetchIdentifiersUrl,

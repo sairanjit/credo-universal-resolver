@@ -1,1 +1,1 @@
-export * from "./UniversalDidResovler"
+export * from "./UniversalDidResolver"

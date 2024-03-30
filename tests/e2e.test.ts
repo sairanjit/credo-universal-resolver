@@ -2,9 +2,9 @@ import { describe, it } from "node:test"
 import assert, { deepStrictEqual } from "node:assert"
 
 import { UniversalDidResolver } from "../src"
-import { agentDependencies } from "@aries-framework/node"
-import { Agent, DidsModule } from "@aries-framework/core"
-import { AskarModule } from "@aries-framework/askar"
+import { agentDependencies } from "@credo-ts/node"
+import { Agent, DidsModule } from "@credo-ts/core"
+import { AskarModule } from "@credo-ts/askar"
 import { ariesAskar } from "@hyperledger/aries-askar-nodejs"
 
 describe("Universal Resolver + AFJ", { timeout: 120000 }, async () => {

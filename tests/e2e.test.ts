@@ -7,7 +7,7 @@ import { Agent, DidsModule } from "@credo-ts/core"
 import { AskarModule } from "@credo-ts/askar"
 import { ariesAskar } from "@hyperledger/aries-askar-nodejs"
 
-describe("Universal Resolver + AFJ", { timeout: 120000 }, async () => {
+describe("Universal Resolver + Credo", { timeout: 120000 }, async () => {
   // const BASE_URL = "https://dev.uniresolver.io"
   const BASE_URL = "http://localhost:8080"
   const FETCH_IDENTIFIERS_URL = `${BASE_URL}/1.0/identifiers`

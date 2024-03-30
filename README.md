@@ -6,7 +6,7 @@
   </picture>
 </p>
 
-<h1 align="center" ><b>Univeral Resolver integration for Aries Framework JavaScript</b></h1>
+<h1 align="center" ><b>Univeral Resolver integration for Credo</b></h1>
 
 <h4 align="center">Powered by &nbsp; 
   <picture>
@@ -58,9 +58,9 @@ yarn add @animo-id/afj-universal-resolver
 
 ```typescript
 import { UniversalDidResolver } from "@animo-id/afj-universal-resolver"
-import { agentDependencies } from "@aries-framework/node"
-import { Agent, DidsModule } from "@aries-framework/core"
-import { AskarModule } from "@aries-framework/askar"
+import { agentDependencies } from "@credo-ts/node"
+import { Agent, DidsModule } from "@credo-ts/core"
+import { AskarModule } from "@credo-ts/askar"
 import { ariesAskar } from "@hyperledger/aries-askar-nodejs"
 
 const devUniResolverUrl = "https://dev.uniresolver.io/1.0"

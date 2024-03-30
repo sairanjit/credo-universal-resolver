@@ -1,7 +1,7 @@
 {
   "name": "@animo-id/afj-universal-resolver",
   "version": "0.1.0",
-  "description": "AFJ Universal DID Resolver integration",
+  "description": "Credo Universal DID Resolver integration",
   "author": "Animo Solutions",
   "main": "build/index",
   "publishConfig": {
